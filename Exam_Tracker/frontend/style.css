@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    align-items: center;
+  }
+  html, body {
+    height: 100%; /* Ensure full height for the body and html */
+    margin: 0;    /* Remove default margin */
+    display: flex; /* Use flexbox to center content */
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+}
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: rgb(218, 245, 243);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 100%;
+    max-width: 2000px;
+    margin-top: 20px;
+    overflow-y: auto; /* Scroll for subjects if needed */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+
+  
+  #add-subject-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  #subject-input {
+    padding: 10px;
+    font-size: 1.1em;
+    width: 300px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  #subject-input:focus {
+    outline: none;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  #add-subject-btn {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    margin-left: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #6c63ff;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  #add-subject-btn:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  #subjects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-height: 500px; /* Limit the height */
+    overflow-y: auto; /* Allow scrolling if there are too many subjects */
+  }
+  
+  .subject {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .subject h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #444;
+  }
+  
+  ul {
+    list-style: none;
+    margin-bottom: 10px;
+  }
+  
+  li {
+    font-size: 1.2em;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.3);
+    cursor: pointer;
+  }
+  
+  progress {
+    width: 100%;
+    height: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #f3f3f3;
+    box-shadow: inset 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  progress::-webkit-progress-bar {
+    background-color: #e0e0e0;
+  }
+  
+  progress::-webkit-progress-value {
+    background-color: #6c63ff;
+  }
+  
+  progress::-moz-progress-bar {
+    background-color: #6c63ff;
+  }
+  
+  
+  button {
+    background-color: #6c63ff;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ff6b81;
+  }
+  /* General styles */
+
+  
+  /* Container for the content */
+  .container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Title of the page */
+  h1 {
+    font-size: 3em;
+    color: #333;
+    z-index: 3; /* Ensure the title is above the 3D background */
+  }
+  
+  /* Section for adding subjects */
+  #add-subject-section {
+    margin-top: 20px;
+    z-index: 3; /* Ensure the input field is above the 3D background */
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    font-size: 1em;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Container for subjects */
+  #subjects-container {
+    margin-top: 30px;
+    z-index: 3;
+  }
+  
